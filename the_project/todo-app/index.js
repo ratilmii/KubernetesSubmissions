@@ -14,9 +14,9 @@ app.get('/', (req, res) => {
         <p>Welcome!</p>
       </body>
     </html>
-  `)
-})
+  `);
+});
 
 app.listen(port, () => {
-  console.log(`Server started in port ${port}`)
-})
+  console.log(`Server started in port ${port}`);
+});

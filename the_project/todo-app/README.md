@@ -1,3 +1,6 @@
 # Todo app
 Deploy with `kubectl apply -f manifests/`
-Use by going to http://localhost:80 unless specified differently when setting up the cluster.
+
+If the cluster was created with a host port mapping (e.g., `-p 8081:80@loadbalancer`), access it by going to: http://localhost:8081/
+
+Otherwise use port-forwarding, like `kubectl port-forward <pod-name> 8081:80` first.

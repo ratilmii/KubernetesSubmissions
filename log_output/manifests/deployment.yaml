@@ -14,4 +14,7 @@ spec:
     spec:
       containers:
         - name: log-output
-          image: ratilmii/log-output 
+          image: ratilmii/log-output
+          env:
+            - name: PORT
+              value: "3300" 

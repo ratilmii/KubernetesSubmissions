@@ -18,7 +18,7 @@ setInterval(() => {
   console.log(`${status.timestamp}: ${status.id}`);
 }, 5000);
 
-app.get('/', (req, res) => {
+app.get('/status', (req, res) => {
   const status = getStatus();
   res.send(`
     <!DOCTYPE html>
